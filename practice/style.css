@@ -1,0 +1,71 @@
+/*These rules control the style of the page. Change any of them and see what happens!*/
+
+/*This sets the background color and font for the whole page*/
+body {
+    background-color: #EED7DF;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+/*This centers the page and makes it white*/
+div.wrapper{
+    max-width: 1000px;    
+    margin: 0 auto;
+    background-color: white;
+}
+
+/*This styles the header*/
+header {
+    background-color: #2C3135;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*This styles the main part of the page*/
+section.main{
+    width: 65%;
+    padding: 20px;
+    float: left; /*Puts the main part on the left*/
+}
+
+/*This styles the sidebar*/
+aside{
+    background-color: #AF1C52;
+    border: 5px solid #72002A;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 25%;
+    float: right; /*puts the sidebar to the right*/
+}
+
+/*This styles the links inside the sidebar*/
+aside a{
+    color: white;
+}
+
+/*This styles the footer*/
+footer {
+    background-color: #AF1C52;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both; /*Puts the footer below all the other content*/
+}
+
+/*Make your own rules!*/
+/*My rules for paragraphs*/
+p{
+
+}
+
+/*My rules for images*/
+img{
+
+}
+
+/*My rules for lists*/
+ul,ol{
+    
+}
