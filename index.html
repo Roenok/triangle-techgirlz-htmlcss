@@ -102,7 +102,7 @@
         </section>
     </section>
      
-    <!-- HTML element-->
+    <!-- HTML elements-->
     <section>
         <section>
          <h3>HTML Elements</h3>
@@ -167,7 +167,151 @@
                 <li>Don't be afraid to ask for help!</li>
             </ul>
         </section>
-    </section>  
+    </section>
+    
+    <!-- Basic Tags -->
+    <section>
+        <section>
+          <h3>Paragraph: &lt;p&gt;</h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;p&gt;Paragraph 1&lt;/p&gt;
+  &lt;p&gt;Paragraph 2&lt;/p&gt;
+  &lt;p&gt;Paragraph 3&lt;/p&gt;
+</code></pre>
+<pre><code>
+  &lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;  &lt;p&gt;Paragraph 3&lt;/p&gt;
+</code></pre>
+<pre><code>
+  &lt;p&gt;Paragraph 1&lt;/p&gt; 
+  
+  
+  &lt;p&gt;Paragraph 2&lt;/p&gt;  
+  &lt;p&gt;Paragraph 3&lt;/p&gt;
+</code></pre>
+          </div>
+          <div>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+          <p>Paragraph 3</p>
+          
+          </div>
+          <div class ="clear"></div>
+          <p><small>* You can add as much or as little space as you want in your code. It all looks the same!</small></p>
+          </div>
+        </section>
+         <section>
+          <h3>Heading: &lt;h#&gt;</h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;h1&gt;Heading 1&lt;/h1&gt;
+  &lt;h2&gt;Heading 2&lt;/h2&gt;
+  &lt;h3&gt;Heading 3&lt;/h3&gt;
+  &lt;h4&gt;Heading 4&lt;/h4&gt;
+  &lt;h5&gt;Heading 5&lt;/h5&gt;
+  &lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+          </div>
+          <div class = "left" style = "width:50%">
+            <h1 style = "font-size: 120%">Heading 1</h1>
+            <h2 style = "font-size: 110%">Heading 2</h2>
+            <h3 style = "font-size: 105%">Heading 3</h3>
+            <h4 style = "font-size: 95%">Heading 4</h4>
+            <h5 style = "font-size: 85%">Heading 5</h5>
+            <h6 style = "font-size: 75%">Heading 6</h6>
+          </div>
+          <div class ="clear"></div>
+          <p>* Headings are for organization, not size</p>
+          </div>
+        </section>
+        
+        <section>
+          <h3>Bold: &lt;strong&gt; and Italics: &lt;em&gt;</h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+&lt;p>
+  Here is a paragraph with &lt;em&gt;Emphasized&lt;/em&gt; text and &lt;strong&gt;Important&lt;/strong&gt; text.
+&lt;/p>
+</code></pre>
+          </div>
+          <div class = "left left-align" style = "width:50%">
+            <p>
+              Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
+            </p>
+          </div>
+          <div class ="clear"></div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Lists: &lt;ul&gt; or &lt;ol&gt; and &lt;li&gt;</h3>
+          <div>
+          <div class = "left" style = "width:50%">
+<pre><code>
+  &lt;ul&gt;
+    &lt;li&gt;List Item&lt;/li&gt;
+    &lt;li&gt;AnotherList Item&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+<pre><code>
+  &lt;ol&gt;
+    &lt;li&gt;List Item&lt;/li&gt;
+    &lt;li&gt;AnotherList Item&lt;/li&gt;
+  &lt;/ol&gt;
+</code></pre>
+          </div>
+          <div class = "left" style = "width:50%">
+            <p>Unordered list (bullets)
+            <ul>
+              <li>List Item</li>
+              <li>AnotherList Item</li>
+            </ul>
+            <br/>
+            <br/>
+            <p>Ordered list (sequence)
+            <ol>
+              <li>List Item</li>
+              <li>AnotherList Item</li>
+            </ol>
+          </div>
+          <div class ="clear"></div>
+          </div>
+        </section>        
+    </section>
+     
+    <!-- Nesting-->
+    <section>
+        <section>
+            <h3>Nesting</h3>
+            <p>All elements "nest" inside one another</p>
+            <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+            <img src = "images/owls.jpg" alt="owls" height="200px"/>
+              
+            <p>Whichever element OPENS first CLOSES last</p>
+        </section>
+        
+        <!--example of nesting -->
+        <section>
+        	<h3>Nesting: Example</h3>
+        	<p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
+        	<pre><code>
+        	&lt;body&gt;
+        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+        	&lt;/body&gt;
+        	</code></pre>
+        	<p>Paragraphs 'nested' inside list items.</p>
+        	<pre><code>
+        	&lt;ul&gt;
+        	   &lt;li&gt;
+        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+        	   &lt;/li&gt;
+        	&lt;/ul&gt;
+        	</code></pre>
+        </section>
+    </section>
     
     <!-- Bonus Features -->
     <section>    
