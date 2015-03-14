@@ -99,6 +99,7 @@
             <div style = "font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
             <p class ="blue">A paragraph is your content</p>
           </li>
+        </ul>
         </section>
     </section>
      
@@ -119,9 +120,11 @@
             <ul>
               <li>Marks the beginning &amp; end of an element</li>
               <li>Come in pairs: the opening and the closing tags</li>
-              <li>Each different type of element has a different name</li>
+              <li>Each different type of element has a different name
 <pre><code class ="html">&lt;tagname&gt;Stuff in the middle&lt;/tagname&gt;</code></pre>
               </li>
+            </ul>
+          </li>
                <li>
 <pre><code class ="html">&lt;p&gt; This is a sample paragraph.&lt;/p&gt;</code></pre>
               </li>
@@ -288,7 +291,7 @@
             <h3>Nesting</h3>
             <p>All elements "nest" inside one another</p>
             <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-            <img src = "images/owls.jpg" alt="owls" height="200px"/>
+            <img src = "images/owls.jpg" alt="owls" height="200"/>
               
             <p>Whichever element OPENS first CLOSES last</p>
         </section>
@@ -493,18 +496,221 @@ selector {
             <h3>You try it!</h3>
             <ul>
                 <li>At the top of your index.html, you'll see a line that looks like this:</li>
-<pre><code>
+<pre><code class="html">
 &lt;!-- &lt;link rel="stylesheet" href="style.css"&gt; --&gt;
 </code></pre>
                 <li>Take out the &lt;!-- and --&gt; so it looks like this:</li>
-<pre><code>
+<pre><code class="html">
 &lt;link rel="stylesheet" href="style.css"&gt; --&gt;
 </code></pre>
                 <li>Save and reload the page. See how it changes!</li>
             </ul>
         </section>
     </section>
+    
+    <!-- ID vs Class-->
+		<section>
+			<section>
+			<h3>Reusing code</h3>
+			<p>As a general coding principle, <span class = "yellow">D</span>on't <span class = "yellow">R</span>epeat <span class = "yellow">Y</span>ourself.
+			<p>To reuse CSS, we use IDs and classes.</p>
+			<img src="images/recycle.jpg" alt="Recycle symbol"/>
+			<p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/yomostro/2502577270/">Yo Mostro</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+			</section>
+			<section>
+			<h3>What is the difference?</h3>
+			<img src="images/starfish.jpg" alt="Group of purple starfish with one orange one"/>
+			<p class="credit">Photo credit:  <a href="http://www.flickr.com/photos/ironrodart/4206314478/">IronRodArt</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+			</section>
+			<section>
+			<h3>IDs vs. Classes</h3>
+				<div class = "left-align">
+				  <span class = "yellow">ID</span> -- Should only apply to one element on a webpage, e.g., a webpage only has one footer.
+				  <p>The "#" is how you tell CSS "this is an id."</p>
+				</div>
+				<div class = "left-align">
+				  <span class = "yellow">Class</span> -- Lots of elements can have the same class, e.g., there can be many warning on one webpage.
+				  <p>The "." is how you tell CSS "this is a class name."</p>
+				</div>
+			</section>
+		</section>
+    
+    <!-- CSS Syntax -->
+		<section>
+			<section>
+			  <h3>CSS Syntax</h3>
+			  <div class = "left-align">
+				<p>Declarations:  Property and value of style you plan use on HTML element. </p>
+			  <p>Declarations end with a semicolon</p>
+			  <p>Declaration groups are surrounded by curly brackets.</p>
+			  </div>
+			  
+<pre><code class = "html">
+selector {
+  property: value;
+  property: value;
+  property: value;
+}
+</code></pre>
+        </section>
+
+        <!-- Selectors elements-->
+        <section>
+			  <h3>Selector: Element</h3>
+<pre><code class = "html">
+p {
+  property: value;
+}
+</code></pre>
+      <p>Selects all paragraph elements.</p>
+<pre><code class = "html">
+img {
+  property: value;
+}
+</code></pre>
+        <p>Selects all image elements.</p>
+        </section>
+        
+        <!-- Selectors ID-->
+        <section>
+			    <h3>Selector: ID</h3>
+<pre><code class = "html">
+#footer {
+  property: value;
+}
+</code></pre>
+          <p>Selects all elements with an id of "footer".</p>
+          
+<pre><code class = "html">
+&lt;p id="footer"&gt;Copyright 2011&lt;/p&gt;
+</code></pre>
+         <p>The associated HTML.</p>
+			  </section>
+        
+        <!-- Selectors Class-->
+        <section>
+			    <h3>Selector: Class</h3>
+<pre><code class = "html">
+.warning {
+  color: red;
+}
+</code></pre>
+          <p>Selects all elements with a class of "warning".</p>
+
+<pre><code class = "html">
+&lt;p class="warning"&gt;Run away!&lt;/p&gt;
+</code></pre>
+         <p>The associated HTML.</p>
+			  </section>
+		       
+      
+        <!-- Selector position-->
+        <section>
+        <h3>Selector: Position</h3>
+<pre><code class = "html">
+p em {
+  color: yellow;
+}
+</code></pre>
+       <p>Selects all em elements that are within a paragraph</p>
+<pre><code class = "html">
+&lt;p&gt;This is &lt;em&gt;important.&lt;/em&gt;&lt;/p&gt;
+</code></pre>
+        <p>The associated HTML.</p>
+      </section>
+</section>
+    
+    <!-- Color -->
+    <section>
+        <section>
+          <h3>Property: Color</h3>
+          <p>The color property changes the color of the text.</p>
+<pre><code class = "html">
+p {
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+}
+</code></pre>
+        <p>Color name</p>
+        <p>Hexadecimal value</p>
+        <p>RGB value</p>
+        <p><small>The 17 standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</small></p>
+
+        </section>
+    </section>
+
+    <!-- Exercise Six -->
+    <section>
+        <section>
+            <h3>You try it!</h3>
+            <ul>
+                <li>Open up styles.css</li>
+                <li>At the bottom, there are some empty blocks. Add your own code!</li>
+                <li>Try changing the color of paragraphs</li>
+            </ul>
+        </section>
+    </section>
+    
+    <!-- Other properties -->
+    <section>        
+        <!-- Background color-->
+        <section>
+          <h3>Property: Background-color</h3>
+          <p>The background-color property changes the color of the background.</p>
+<pre><code class = "html">
+p {
+  background-color: black;
+  background-color: #000000;
+  background-color: rgb(0,0,0);
+}
+</code></pre>
+        </section>      
      
+        <!-- Font size -->
+        <section>
+          <h3>Property: Font-size</h3>
+          <p>The font-size property changes the size of the font.</p>
+<pre><code class = "html">
+p {
+  font-size: 12px;
+  font-size: 1.5em;
+  font-size: 100%;
+}
+</code></pre>
+          <p>Pixels</p>
+          <p>"em"</p>
+          <p>Percentage</p>
+        </section>
+        
+        <!-- Border  -->
+        <section>
+          <h3>Property: Border</h3>
+          <p>This adds borders to elements</p>
+<pre><code class = "html">
+p {
+    border: 4px solid black;
+}
+</code></pre>
+          <p>Size</p>
+          <p>Style (solid, dashed, dotted, etc.)</p>
+          <p>Color</p>
+        </section>    
+    </section>
+    
+    <!-- Exercise Six -->
+    <section>
+        <section>
+            <h3>You try it!</h3>
+            <ul>
+                <li>Keep changing styles.css</li>
+                <li>Try changing the color, size, and borders of elements</li>
+                <li>Want to try something else? Ask your coach!</li>
+            </ul>
+        </section>
+    </section>
+    
+    
 			</div>
   		<footer>
         <div class="copyright">
